@@ -7,6 +7,8 @@
     --c-second: #F4F4FD;
     --c-cont-but: #404bbf;
     --c-logo: #4D5AE5;
+    --c-cornflower: #E7E9FC;
+    --c-light-slate: #8E8F99;
     
 }
 
@@ -58,13 +60,15 @@ body {
 }
 
 .header{
-    border-bottom: 1px solid #E7E9FC;
+    background-color: var(--c-background-light);
 }
 
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid var(--c-cornflower);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 
 }
 
@@ -132,8 +136,15 @@ body {
 
 .hero-section{
     background-color: var(--c-background-dark);
-    padding-top: 188px;
-    padding-bottom: 188px;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/peopleoffice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1440px;
+    height: 600px;
+    padding: 188px 0;
+    flex-shrink: 0;
 
 }
 
@@ -199,6 +210,14 @@ body {
 
 }
 
+.section-content-icon{
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--c-light-slate);
+}
+
 .section-content-h{
     color: var(--c-primary);
     font-size: 20px;
@@ -236,6 +255,36 @@ body {
     background-color: var(--c-background-light);
     flex-basis: calc((100% - 72px) / 4));
     border-radius: 0px 0px 4px 4px;
+    box-shadow: box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+}
+
+.section-team-list-item{
+
+}
+
+.social_link_team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.team-links {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c-logo);
+    color:var(--c-primary-light);
+
+}
+
+.team-link-list{
+    width: 40px;
+    height: 40px;
 }
 
 .employee{
