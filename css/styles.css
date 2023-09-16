@@ -106,15 +106,6 @@ body {
     display: flex;
 }
 
-.team-link-icon{
-    fill: var(--c-second)
-}
-
-.team-link-list{
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
-}
-
-
 .nav-link {
     position: relative;
     color: #404bbf;
@@ -301,6 +292,14 @@ body {
 
 }
 
+.team-link-icon {
+    fill: var(--c-second)
+}
+
+.team-link-list {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+}
 .social_link_team{
     display: flex;
     justify-content: center;
