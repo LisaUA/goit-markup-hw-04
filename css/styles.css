@@ -1,6 +1,4 @@
 :root{
-    --c-background-light: #ffffff;
-    --c-background-dark: #2E2F42;
     --c-text-primary: #434455;
     --c-primary: #2e2f42;
     --c-primary-light: #ffffff;
@@ -48,7 +46,7 @@ button {
 body {
     font-family: "Roboto", sans-serif;
     color: var(--c-text-primary);
-    background-color: var(--c-background-light);
+    background-color: var(--c-primary-light);
     font-size: 16px;
 }
 
@@ -61,7 +59,7 @@ body {
 }
 
 .header{
-    background-color: var(--c-background-light);
+    background-color: var(--c-primary-light);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 
 }
@@ -108,6 +106,14 @@ body {
     display: flex;
 }
 
+.team-link-icon{
+    fill: var(--c-second)
+}
+
+.team-link-list{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
 
 .nav-link {
     position: relative;
@@ -117,6 +123,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link::after{
@@ -153,7 +160,7 @@ body {
 }
 
 .hero-section{
-    background-color: var(--c-background-dark);
+    background-color: var(--c-primary);
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
     url(../images/peopleoffice.jpg);
     background-repeat: no-repeat;
@@ -282,7 +289,7 @@ body {
 }
 
 .section-team-list{
-    background-color: var(--c-background-light);
+    background-color: var(--c-primary-light);
     flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -379,6 +386,10 @@ body {
     row-gap: 48px;
 }
 
+..section-portfolio-li:hover{
+    transform: translateY(0%);
+}
+
 .section-portfolio-list{
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -420,7 +431,7 @@ body {
 
 }
 
-.portfolio:hover .portfolio-overlay{
+.section-portfolio-list:hover .portfolio-overlay{
     transform: translateY(0);
 }
 
@@ -496,11 +507,11 @@ body {
 .social-media-list-footer{
     display: flex;
     gap: 16px;
+    width: 40px;
+    height: 40px;
 }
 
 .footer-social-link{
-    width: 40px;
-    height: 40px;
     transition: backgroun-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
